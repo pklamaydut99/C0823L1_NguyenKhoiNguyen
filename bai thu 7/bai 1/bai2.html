@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>nhập 0C (Celsius)</label>
+<input type="text" id="nhapc">
+<button id="btn" onclick="chuyendoi()"> Chuyển đổi</button><br>
+<label id="kq">F =</label>
+</body>
+<script>
+function chuyendoi(){
+    var c = +document.getElementById("nhapc").value;
+    var f = 9/5*c+32;
+    document.getElementById("kq").innerText = "F ="+f;
+}
+</script>
+</html>

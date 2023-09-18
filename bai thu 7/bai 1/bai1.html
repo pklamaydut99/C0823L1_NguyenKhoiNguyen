@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+            <label>nhập điểm hóa</label>
+            <input type="text" name="vatly" id="vatly"> <br>
+            <label>nhập vật lý</label>
+            <input type="text" name="hoahoc" id="hoahoc"><br>
+            <label>nhập sinh học</label>
+            <input type="text" name="sinhhoc" id="sinhhoc"><br>
+            <button id="tong" type="button" onclick="tinhtong()">Tính Tổng</button>
+            <button id="tb" type="button" onclick="tinhtb()">Tính Trung Binh</button>
+
+</form>
+<script>
+    // diemvatly=prompt("nhập điểm vật lý");
+    // diemhoahoc=prompt("nhập điểm vật lý");
+    // diemshinhhoc=prompt("nhập điểm vật lý");
+    // let vatly   = parseInt(diemvatly);
+    // let hoahoc  =parseInt(diemhoahoc);
+    // let sinhhoc =parseInt(diemshinhhoc);
+    // tb      =(vatly+hoahoc+sinhhoc)/3;
+    // tong    =vatly+hoahoc+sinhhoc;
+    // document.write("Điểm tổng là"+tong);
+    // document.write("Điểm trung bình"+tb);
+    function tinhtong() {
+        var vatly = +document.getElementById("vatly").value;
+        var hoahoc = +document.getElementById("hoahoc").value;
+        var sinhhoc = +document.getElementById("sinhhoc").value;
+        var tong = vatly + hoahoc + sinhhoc;
+        document.write("tong"+tong);
+    }
+    function tinhtb() {
+        var vatly = +document.getElementById("vatly").value;
+        var hoahoc = +document.getElementById("hoahoc").value;
+        var sinhhoc = +document.getElementById("sinhhoc").value;
+        var tb = (vatly + hoahoc + sinhhoc)/3;
+        alert("tb la" + tb);
+    }
+</script>
+</body>
+</html>

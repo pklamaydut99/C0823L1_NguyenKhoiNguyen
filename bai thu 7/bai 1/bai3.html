@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích</title>
+</head>
+<body>
+<h2>Diện tích hình tròn</h2>
+<label>Nhập bán kính</label>
+<input type="text" id="bk">
+<button id="btn" onclick="tinh()">Ok</button> <br>
+<label id="kq">KQ=</label>
+</body>
+<script>
+    function tinh(){
+        var bk = document.getElementById("bk").value;
+        var s = 3.14*bk*bk;
+        document.getElementById("kq").innerText="KQ="+s;
+    }
+</script>
+</html>

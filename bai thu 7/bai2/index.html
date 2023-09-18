@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te</title>
+</head>
+<body>
+    <label>Số tiền muốn chuyển đổi</label>
+    <input type="text" id="tien"> <br>
+    <label>từ</label>
+    <select id="tien1">
+        <option value="vnd">VNĐ</option>
+        <option value="usd">USD</option>
+    </select>
+    <label>thành</label>
+    <select id="tien2">
+        <option value="vnd">VNĐ</option>
+        <option value="usd">USD</option>
+    </select>
+    <button id="chuyendoi" onclick="tinhtien()">OK</button> <br>
+    <label id="kq">Kết quả =</label>
+</body>
+<script>
+    function tinhtien(){
+        var sl = document.getElementById("tien").value;
+        var tien1 = document.getElementById("tien1").value;
+        var tien2 = document.getElementById("tien2").value;
+        if(tien1 == tien2) {
+            document.getElementById("kq").innerHTML="Kết quả =" + sl;
+        }
+        if (tien1 == "vnd" && tien2 == "usd") {
+            document.getElementById("kq").innerHTML="Kết quả =" + sl/24000;
+        }
+        else {
+            document.getElementById("kq").innerHTML="Kết quả =" + sl*24000;
+        }
+    }
+</script>
+</html>

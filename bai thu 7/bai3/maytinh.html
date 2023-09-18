@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May Tinh</title>
+</head>
+<body>
+<input type="text" id="a">
+<select id="pheptinh">
+  <option value="nhan">X</option>
+  <option value="chia">/</option>
+  <option value="cong">+</option>
+  <option value="tru">-</option>
+</select>
+<input type="text" id="b">
+<button onclick="bang()">=</button>
+<label id="kq"></label>
+</body>
+<script>
+  function bang(){
+    var a = +document.getElementById("a").value;
+    var b = +document.getElementById("b").value;
+    var pheptinh = document.getElementById("pheptinh").value;
+    if (pheptinh == "nhan"){
+      document.getElementById("kq").innerHTML=""+a*b;
+    }
+    if (pheptinh=="chia"){
+      document.getElementById("kq").innerHTML=""+a/b;
+    }
+    if (pheptinh=="cong"){
+      document.getElementById("kq").innerHTML=""+ (a+b);
+    }
+    if (pheptinh=="tru"){
+      document.getElementById("kq").innerHTML=""+a-b;
+    }
+  }
+</script>
+</html>
