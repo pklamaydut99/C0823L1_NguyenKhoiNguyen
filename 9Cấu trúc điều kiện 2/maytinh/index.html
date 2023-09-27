@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="mycss.css" rel="stylesheet">
+</head>
+<body>
+<table class="form">
+    <tr>
+        <td colspan="3"><input class="manghinh" type="text" id="hienthi" disabled></td>
+    </tr>
+    <tr>
+        <td><button class="nut" value="1" onclick="display('1')">1</button></td>
+        <td><button class="nut" value="2" onclick="display('2')">2</button></td>
+        <td><button class="nut" value="3" onclick="display('3')">3</button></td>
+        <td><button class="nut" value="+" onclick="display('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button class="nut" value="4" onclick="display('4')">4</button></td>
+        <td><button class="nut" value="5" onclick="display('5')">5</button></td>
+        <td><button class="nut" value="6" onclick="display('6')">6</button></td>
+        <td><button class="nut" value="-" onclick="display('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button class="nut" value="7" onclick="display('7')">7</button></td>
+        <td><button class="nut" value="8" onclick="display('8')">8</button></td>
+        <td><button class="nut" value="9" onclick="display('9')">9</button></td>
+        <td><button class="nut" value="*" onclick="display('*')">X</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clearDisplay()" type="button" class="nut">C</button></td>
+        <td><button class="nut" value="0" onclick="display('0')">0</button></td>
+        <td><button class="nut" value="0" onclick="bang()">=</button></td>
+        <td><button class="nut" value="/" onclick="display('/')">/</button></td>
+    </tr>
+</table>
+</body>
+<script>
+    function clearDisplay(){
+        document.getElementById("hienthi").value="";
+    }
+    function display(value){
+        document.getElementById("hienthi").value += value;
+    }
+    function  bang(){
+        var p = document.getElementById("hienthi").value;
+        var kq= eval(p);
+        document.getElementById("hienthi").value = kq;
+    }
+</script>
+</html>

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9c4ba4c-67c0-4041-9c60-86fe9a986e12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../taoformdangky.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../taoformdongian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../taoformsurvey.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../taotabledongian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai tap buoi 3/bai2/avatar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai tap buoi 3/bai2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai tap buoi 3/bai2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai thu 7/bai3/mycss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai thu 7/bai3/nangcao.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,24 +20,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2VNGsJ6SDmkbwvvzuFxiltHZygq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694669329392</updated>
       <workItem from="1694669330465" duration="19000" />
+      <workItem from="1695216783030" duration="10000" />
     </task>
     <servers />
   </component>

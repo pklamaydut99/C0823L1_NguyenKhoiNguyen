@@ -17,7 +17,7 @@
         <option value="vnd">VNĐ</option>
         <option value="usd">USD</option>
     </select>
-    <button id="chuyendoi" onclick="tinhtien()">OK</button> <br>
+    <button onclick="tinhtien()">OK</button> <br>
     <label id="kq">Kết quả =</label>
 </body>
 <script>
@@ -28,7 +28,7 @@
         if(tien1 == tien2) {
             document.getElementById("kq").innerHTML="Kết quả =" + sl;
         }
-        if (tien1 == "vnd" && tien2 == "usd") {
+        else if (tien1 == "vnd" && tien2 == "usd") {
             document.getElementById("kq").innerHTML="Kết quả =" + sl/24000;
         }
         else {
@@ -36,4 +36,5 @@
         }
     }
 </script>
+<link rel="stylesheet" href="mycss.css">
 </html>
