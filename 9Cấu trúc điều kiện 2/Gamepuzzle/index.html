@@ -3,13 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        img{
+            height: 100px;
+            width: 600px;
+        }
+    </style>
 </head>
 <body>
 <div>
-
+<table>
+    <tr>
+        <td onclick="hinh1()"><img id="img1" src="img/funny-cat1_part1x1.jpg"></td>
+    </tr>
+    <tr>
+        <td onclick="hinh2()"><img id="img2" src="img/funny-cat1_part1x1.jpg"></td>
+    </tr>
+    <tr>
+        <td onclick="hinh3()"><img id="img3" src="img/funny-cat1_part1x1.jpg"></td>
+    </tr>
+    <tr>
+        <td onclick="hinh4()"><img id="img4" src="img/funny-cat1_part1x1.jpg"></td>
+    </tr>
+    <tr>
+        <td onclick="hinh5()"><img id="img5" src="img/funny-cat1_part1x1.jpg"></td>
+    </tr>
+</table>
 </div>
 <script>
-
+//     var index = 0
+//     function af(){
+//     let.id =[img,img,img];
+//     document.getElementById("id").src=id[index]
+//     if (index < id.length -1){
+//         index++;
+//     }else{
+//         index=0
+//     }
+// }
+var index = 0;
+var index1 = 0;
+var index2 = 0;
+var index3 = 0;
+var index4 = 0;
+function hinh1(){
+    let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
+    document.getElementById("img1").src = imgs [index];
+    if (index < imgs.length -1){
+        index++
+    }else {
+        index=0
+    }
+}
+function hinh2(){
+    let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
+    document.getElementById("img1").src = imgs [index1];
+    if (index2 < imgs.length -1){
+        index2++
+    }else {
+        index2=0
+    }
+}
+function hinh3(){
+    let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
+    document.getElementById("img1").src = imgs [index3];
+    if (index3 < imgs.length -1){
+        index3++
+    }else {
+        index3=0
+    }
+}
+function hinh4(){
+    let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
+    document.getElementById("img1").src = imgs [index4];
+    if (index4 < imgs.length -1){
+        index4++
+    }else {
+        index4=0
+    }
+}
+function hinh5(){
+    let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
+    document.getElementById("img1").src = imgs [index5];
+    if (index5 < imgs.length -1){
+        index5++
+    }else {
+        index5=0
+    }
+}
 </script>
 </body>
 </html>
