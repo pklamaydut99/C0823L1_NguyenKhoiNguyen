@@ -8,11 +8,11 @@
 <h2>Diện tích hình tròn</h2>
 <label>Nhập bán kính</label>
 <input type="text" id="bk">
-<button id="btn" onclick="tinh()">Ok</button> <br>
+<button id="btn" onclick="tinhTong()">Ok</button> <br>
 <label id="kq">KQ=</label>
 </body>
 <script>
-    function tinh(){
+    function tinhTong(){
         var bk = document.getElementById("bk").value;
         var s = 3.14*bk*bk;
         document.getElementById("kq").innerText="KQ="+s;

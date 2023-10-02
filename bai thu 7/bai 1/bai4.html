@@ -8,11 +8,11 @@
 <h2>Chu vi hình tròn</h2>
 <label>Nhập bán kính</label>
 <input type="text" id="cv">
-<button id="btn" onclick="tinhcv()">Ok</button> <br>
+<button id="btn" onclick="tinhCv()">Ok</button> <br>
 <label id="kq">KQ=</label>
 </body>
 <script>
-    function tinhcv(){
+    function tinhCv(){
         var cv = document.getElementById("cv").value;
         var p = 2*3.14*cv;
         document.getElementById("kq").innerText="KQ="+p;

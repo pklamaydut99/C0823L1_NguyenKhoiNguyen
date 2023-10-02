@@ -31,7 +31,7 @@
     <tr>
         <td><button onclick="clearDisplay()" type="button" class="nut">C</button></td>
         <td><button class="nut" value="0" onclick="display('0')">0</button></td>
-        <td><button class="nut" value="0" onclick="bang()">=</button></td>
+        <td><button class="nut" value="0" onclick="tinhtong()">=</button></td>
         <td><button class="nut" value="/" onclick="display('/')">/</button></td>
     </tr>
 </table>
@@ -44,7 +44,7 @@
     function display(value){
         document.getElementById("hienthi").value += value;
     }
-    function  bang(){
+    function  tinhtong(){
         var p = document.getElementById("hienthi").value;
         var kq= eval(p);
         document.getElementById("hienthi").value = kq;

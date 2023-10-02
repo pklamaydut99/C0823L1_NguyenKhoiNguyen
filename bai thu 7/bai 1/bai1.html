@@ -12,8 +12,8 @@
             <input type="text" name="hoahoc" id="hoahoc"><br>
             <label>nhập sinh học</label>
             <input type="text" name="sinhhoc" id="sinhhoc"><br>
-            <button id="tong" type="button" onclick="tinhtong()">Tính Tổng</button>
-            <button id="tb" type="button" onclick="tinhtb()">Tính Trung Binh</button>
+            <button id="tong" type="button" onclick="tinhTong()">Tính Tổng</button>
+            <button id="tb" type="button" onclick="tinhTb()">Tính Trung Binh</button>
 
 </form>
 <script>
@@ -27,14 +27,14 @@
     // tong    =vatly+hoahoc+sinhhoc;
     // document.write("Điểm tổng là"+tong);
     // document.write("Điểm trung bình"+tb);
-    function tinhtong() {
+    function tinhTong() {
         var vatly = +document.getElementById("vatly").value;
         var hoahoc = +document.getElementById("hoahoc").value;
         var sinhhoc = +document.getElementById("sinhhoc").value;
         var tong = vatly + hoahoc + sinhhoc;
         document.write("tong"+tong);
     }
-    function tinhtb() {
+    function tinhTb() {
         var vatly = +document.getElementById("vatly").value;
         var hoahoc = +document.getElementById("hoahoc").value;
         var sinhhoc = +document.getElementById("sinhhoc").value;

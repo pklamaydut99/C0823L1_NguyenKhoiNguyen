@@ -57,38 +57,38 @@ function hinh1(){
 }
 function hinh2(){
     let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
-    document.getElementById("img1").src = imgs [index1];
+    document.getElementById("img2").src = imgs [index1];
+    if (index1 < imgs.length -1){
+        index1++
+    }else {
+        index1=0
+    }
+}
+function hinh3(){
+    let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
+    document.getElementById("img3").src = imgs [index2];
     if (index2 < imgs.length -1){
         index2++
     }else {
         index2=0
     }
 }
-function hinh3(){
+function hinh4(){
     let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
-    document.getElementById("img1").src = imgs [index3];
+    document.getElementById("img4").src = imgs [index3];
     if (index3 < imgs.length -1){
         index3++
     }else {
         index3=0
     }
 }
-function hinh4(){
+function hinh5(){
     let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
-    document.getElementById("img1").src = imgs [index4];
+    document.getElementById("img5").src = imgs [index4];
     if (index4 < imgs.length -1){
         index4++
     }else {
         index4=0
-    }
-}
-function hinh5(){
-    let imgs = ["img/funny-cat1_part1x1.jpg","img/monkey_part1x1.jpg","img/panda_swap_part1x1.jpg"];
-    document.getElementById("img1").src = imgs [index5];
-    if (index5 < imgs.length -1){
-        index5++
-    }else {
-        index5=0
     }
 }
 </script>
