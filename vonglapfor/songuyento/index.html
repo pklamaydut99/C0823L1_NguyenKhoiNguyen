@@ -5,9 +5,41 @@
     <title>Title</title>
 </head>
 <body>
+<label> nhập số nguyên tố n:</label>
+<input type="text" id="n">
+<button onclick="lietKe()">OK</button>
+<br>
+<label>liêt kê số nguyên tố:</label> <br>
+<p id="ketqua"></p>
 <script>
-    let n = prompt("Nhập n số nguyên tố đầu tiên: ")
-    for (n=)
+    function kiemTraa(n) {
+        // let n = parseInt(document.getElementById("n").value);
+        let kt = 1;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0 && n > 2) {
+                kt = 0;
+                break;
+            }
+        }
+        return kt;
+    }
+
+
+    function lietKe() {
+        let n = parseInt(document.getElementById("n").value);
+        let i = 2;
+        let dem = 0;
+        let ketqua = "";
+        while (dem < n) {
+            if (kiemTraa(i) === 1) {
+                ketqua = i + " ";
+                document.write(ketqua)
+                dem++;
+            }
+            i++;
+        }
+
+    }
 </script>
 </body>
 </html>
