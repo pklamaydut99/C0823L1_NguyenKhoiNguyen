@@ -7,19 +7,19 @@
 <body>
 <script>
     for (var i = 1; i <= 100; i++) {
-        if ((i % 3 == 0) && (i % 5 != 0)) { // nếu chỉ chia hết cho 3 nhưng không chia hết cho 5
+        if ((i % 3 === 0) && (i % 5 !== 0)) { // nếu chỉ chia hết cho 3 nhưng không chia hết cho 5
             document.write('Fizz'+"<br>"); // thì in Fizz
         }
 
-        if ((i % 3 != 0) && (i % 5 == 0)) { // nếu chỉ chia hết cho 5 nhưng không chia hết cho 3
+        if ((i % 3 !== 0) && (i % 5 === 0)) { // nếu chỉ chia hết cho 5 nhưng không chia hết cho 3
             document.write('Buzz'+"<br>"); // thì in Buzz
         }
 
-        if ((i % 3 == 0) && (i % 5 == 0)) { // nếu chia hết cho cả 3 và 5
+        if ((i % 3 === 0) && (i % 5 === 0)) { // nếu chia hết cho cả 3 và 5
             document.write('FizzBuzz'+"<br>"); // thì in FizzBuzz
         }
 
-        if ((i % 3 != 0) && (i % 5 != 0)) { // nếu không chia hết cho cả 3 và 5
+        if ((i % 3 !== 0) && (i % 5 !== 0)) { // nếu không chia hết cho cả 3 và 5
             document.write(i+"<br>"); // thì in giá trị của i
         }
     }
