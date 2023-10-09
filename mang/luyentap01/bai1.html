@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mangso = [];
+    let mangsolonhon10 = [];
+    for (let i = 0; i < 10; i++) {
+        mangso[i] = Number(prompt("nhập số vào mảng"));
+    }
+    document.write("mangso = [" + mangso + "]<br>");
+    for (let i = 0; i < mangso.length; i++) {
+        if (mangso[i] > 10) {
+            mangsolonhon10.push(mangso[i]);
+        }
+    }
+    document.write("các phần tử lớn hơn 10 = [" + mangsolonhon10 + "]<br>")
+</script>
+</body>
+</html>

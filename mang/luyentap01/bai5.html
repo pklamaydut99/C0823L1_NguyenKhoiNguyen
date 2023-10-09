@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let mangso =[], mangsoam=[];
+  for (let i = 0;i<10;i++){
+    mangso[i]= Number(prompt("nhập số"));
+    if (mangso<0){
+      mangsoam.push(mangso[i]);
+    }
+  }
+  document.write("mảng số =["+mangso+"]<br>");
+  document.write("mảng số âm =["+mangsoam+"]<br>"+"gồm "+mangsoam.length+" phần tử");
+</script>
+</body>
+</html>

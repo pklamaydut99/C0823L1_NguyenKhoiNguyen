@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var n = Number(prompt("nhap so"));
+    var str = n.tostring();
+    var mangSo = [str[0]];
+    for (let x = 1; x < str.length; x++) {
+        if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
+            mangSo.push('-', str[x]);
+        } else {
+            mangSo.push(str[x]);
+        }
+    }
+    document.write(mangSo.join(''));
+    console.log(mangSo)
+</script>
+</body>
+</html>

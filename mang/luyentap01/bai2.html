@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mangso = [];
+    let max = 0, vitri = 0;
+    for (let i = 0; i<10;i++){
+        mangso[i]=Number(prompt("nhập 10 số khác nhau"));
+
+    }
+    document.write("mangso = ["+mangso+"]<br>");
+    for (let i =0; i<mangso.length;i++){
+        if (max<mangso[i]){
+            max = mangso[i];
+            vitri=i;
+        }
+    }
+    document.write("phần tử lớn nhất là :"+max+"<br>"+"vị trí của nó là:"+vitri);
+</script>
+</body>
+</html>
