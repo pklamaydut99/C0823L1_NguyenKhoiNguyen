@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt("Nhập số a"));
+    let b = Number(prompt("Nhập số b"));
+    document.write("Tổng của "+a+" + "+b+" = "+tinhtong(a,b));
+    function tinhtong(a,b) {
+        if(a>b){
+            return "Giá trị a > b xin nhập lại";
+        }
+        return a + b;
+    }
+
+</script>
+</body>
+</html>
