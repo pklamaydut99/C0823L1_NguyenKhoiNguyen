@@ -8,11 +8,6 @@
 <script>
     let timsao = prompt("Nhập tên ngôi sao");
     let sao = ngoiSao(timsao);
-    if(sao === ""){
-        document.write("Không có tên ngôi sao nào");
-    }else {
-        document.write("Tên ngôi sao tương ứng của "+timsao+" là "+sao);
-    }
     function ngoiSao(sao) {
         let sao1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
         let sao2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
@@ -22,6 +17,11 @@
             }
         }
         return "";
+    }
+    if(sao === ""){
+        document.write("Không có tên ngôi sao nào");
+    }else {
+        document.write("Tên ngôi sao tương ứng của "+timsao+" là "+sao);
     }
 </script>
 </body>
