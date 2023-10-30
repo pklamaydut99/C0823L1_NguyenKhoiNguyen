@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập Lương: </label>
+<input type="text" id="luong">
+<button onclick="tinhluong()">OK</button>
+<p id="kq"></p>
+<script>
+function tinhluong(){
+    var luong = +document.getElementById("luong").value;
+
+    if (luong > 15)
+    {
+        luongnhan=luong*0.2;
+    }
+    else if (luong > 7 && luong < 15 )
+    {
+        luongnhan=luong*0.1;
+    }
+    else
+    {
+        luongnhan=luong*0.05;
+    }
+    document.getElementById("kq").innerText=luongnhan+" triệu";
+}
+</script>
+</body>
+</html>
