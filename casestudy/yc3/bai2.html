@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function missingValue(A, B) {
+        let count = {};
+        for (let i = 0; i < A.length; i++) {
+            if (count[A[i]]) {
+                count[A[i]]++;
+            } else {
+                count[A[i]] = 1;
+            }
+        }
+        let result = [];
+        for (let i = 0; i < B.length; i++) {
+            if (!count[B[i]]) {
+                result.push(B[i]);
+                count[B[i]] = 1;
+            }
+        }
+        return result;
+    }
+
+    let A = [7, 2, 5, 3, 5, 3, 1];
+    let B = [7, 2, 5, 4, 6, 3, 5, 3, 1];
+    document.write("missingValue(A, B) =["+missingValue(A, B)+"]")
+</script>
+</body>
+</html>
