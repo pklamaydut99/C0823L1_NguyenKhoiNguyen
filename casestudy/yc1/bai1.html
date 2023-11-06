@@ -7,10 +7,10 @@
 <body>
 <label>Nhập Lương: </label>
 <input type="text" id="luong">
-<button onclick="tinhluong()">OK</button>
-<p id="kq"></p>
+<button onclick="tinhLuong()">OK</button>
+<p id="ketQua"></p>
 <script>
-function tinhluong(){
+function tinhLuong(){
     var luong = +document.getElementById("luong").value;
 
     if (luong > 15)
@@ -25,7 +25,7 @@ function tinhluong(){
     {
         luongnhan=luong*0.05;
     }
-    document.getElementById("kq").innerText=luongnhan+" triệu";
+    document.getElementById("ketQua").innerText=luongnhan+" triệu";
 }
 </script>
 </body>
