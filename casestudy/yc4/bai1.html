@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function chuanHoaXau(str) {
+        let words = str.split(" ");
+
+        for (let i = 0; i < words.length; i++) {
+            // Chuyển đổi từ thành chữ thường
+            let word = words[i].toLowerCase();
+
+            // Chuyển đổi ký tự đầu tiên thành chữ hoa
+            word = word.charAt(0).toUpperCase() + word.slice(1);
+
+            // Gán từ đã chuẩn hóa vào mảng
+            words[i] = word;
+        }
+
+        // Kết hợp các từ mới
+        let result = words.join(" ");
+
+        return result;
+    }
+
+    function tuDaiNhat(str) {
+        // Tách từ
+        let words = str.split(" ");
+
+        // Tìm từ dài nhất
+        let longestWord = "";
+        for (let i = 0; i < words.length; i++) {
+            if (words[i].length > longestWord.length) {
+                longestWord = words[i];
+            }
+        }
+
+        return longestWord;
+    }
+
+    function main() {
+        // Nhập ký tự từ bàn phím
+        let str = prompt("Nhập xâu ký tự:");
+
+        // In ra trước khi chuẩn hóa
+        document.write("Xâu trước khi chuẩn hóa:"+str+"<br>");
+
+        // Chuẩn hóa
+        let chuanHoa = chuanHoaXau(str);
+
+        // In sau khi chuẩn hóa
+        document.write("Xâu sau khi chuẩn hóa:", chuanHoa+"<br>");
+
+        // Tìm từ dài nhất
+        let longestWord = tuDaiNhat(str);
+
+        // In ra từ dài nhất
+        document.write("Từ dài nhất trong xâu:", longestWord+"<br>");
+    }
+    main();
+</script>
+</body>
+</html>
