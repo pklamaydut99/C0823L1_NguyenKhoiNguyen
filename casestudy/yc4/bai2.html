@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function demKyTuKhacNhau(s) {
+        const kyTu = new Set(s);
+        return kyTu.size;
+    }
+
+    const s = prompt("Nhập ký tự")
+    const count = demKyTuKhacNhau(s);
+    document.write("ký tự bạn nhập là: "+s+"<br>");
+    document.write("Số ký tự khác nhau là "+count);
+</script>
+</body>
+</html>
