@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhTongSoChan(m, n) {
+        let matrix = [];
+        let sum = 0;
+
+        // Tạo ma trận với kích thước m x n
+        for (let i = 0; i < m; i++) {
+            matrix[i] = [];
+            for (let j = 0; j < n; j++) {
+                // Nhập giá trị từ bàn phím
+                matrix[i][j] = parseInt(prompt(`Nhập giá trị cho phần tử (${i}, ${j}):`));
+                // Kiểm tra số chẵn và cộng vào tổng
+                if (matrix[i][j] % 2 === 0) {
+                    sum += matrix[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+    // Nhập kích thước ma trận từ bàn phím
+    let m = parseInt(prompt("Nhập số hàng (m):"));
+    let n = parseInt(prompt("Nhập số cột (n):"));
+
+    let tongSoChan = tinhTongSoChan(m, n);
+    document.write("Tổng các số chẵn trong ma trận là:", tongSoChan);
+</script>
+</body>
+</html>

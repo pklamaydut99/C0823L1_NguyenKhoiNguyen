@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraSoNguyenTo(n) {
+        if (n < 2) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function lietKeSoNguyenTo(arr) {
+        let primeNumbers = [];
+        let count = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (kiemTraSoNguyenTo(arr[i][j])) {
+                    primeNumbers.push(arr[i][j]);
+                    count++;
+                }
+            }
+        }
+
+        document.write("Các số nguyên tố trong mảng là:", primeNumbers +"<br>");
+        document.write("Số lượng số nguyên tố trong mảng là:", count);
+    }
+
+    // Khởi tạo mảng 2 chiều
+    let arr = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
+
+    lietKeSoNguyenTo(arr);
+</script>
+</body>
+</html>
